@@ -9,3 +9,15 @@ test("creates an intern object", () => {
     expect(intern.school).toEqual(expect.any(String));
 
 })
+
+test("creates method to return intern school", () => {
+    const intern = new Intern('Chris', 15, 'christopher.sarm15@gmail.com', 'UConn');
+
+    expect(intern.getSchool()).toEqual(expect.any(String));
+})
+
+test("creates method to return intern's role", () => {
+    const intern = new Intern('Chris', 15, 'christopher.sarm15@gmail.com', 'UConn');
+
+    expect(intern.getRole()).toEqual("Intern");
+})
