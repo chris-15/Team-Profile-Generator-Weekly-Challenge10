@@ -14,7 +14,7 @@ test('creates an employee object', () => {
 test('creates method to return employee name', () => {
     const employee = new Employee('Chris', 15, 'christopher.sarm15@gmail.com');
 
-    expect(employee.GetName()).toEqual(expect.any(String));
+    expect(employee.getName()).toEqual(expect.any(String));
 })
 
 // test to create getId of employee; method
