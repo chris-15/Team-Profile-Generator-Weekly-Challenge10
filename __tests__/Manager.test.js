@@ -1,5 +1,6 @@
 const Manager = require('../lib/Manager.js');
 
+// test for manager object creation
 test("creates a manager object", () => {
     const manager = new Manager('Chris', 15, 'christopher.sarm15@gmail.com', 2);
 
@@ -17,6 +18,7 @@ test("creates a manager object", () => {
 
 })
 
+// test to create getRole of manager; method
 test("creates method to return manager role", () => {
     const manager = new Manager('Chris', 15, 'christopher.sarm15@gmail.com', 2);
 

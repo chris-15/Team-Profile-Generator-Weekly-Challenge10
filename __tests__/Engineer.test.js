@@ -1,5 +1,6 @@
 const Engineer = require('../lib/Engineer');
 
+// test for engineer object creation
 test("creates an engineer object", () => {
     const engineer = new Engineer('Chris', 15, 'christopher.sarm15@gmail.com', 'chris-15');
     
@@ -17,6 +18,7 @@ test("creates an engineer object", () => {
 
 })
 
+// test to create getGitHub of engineer; method
 test("creates method to return engineer's github", () => {
     const engineer = new Engineer('Chris', 15, 'christopher.sarm15@gmail.com', 'chris-15');
     
@@ -24,6 +26,7 @@ test("creates method to return engineer's github", () => {
     expect(engineer.getGitHub()).toEqual(expect.any(String));
 })
 
+// test to create getRole of engineer; method
 test("creates method to return engineer role", () => {
     const engineer = new Engineer('Chris', 15, 'christopher.sarm15@gmail.com', 'chris-15');
 
