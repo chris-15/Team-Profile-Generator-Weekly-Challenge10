@@ -1,3 +1,4 @@
+// functio to generate the body of the html page
 function body(cards){
     return `
 <!DOCTYPE html>

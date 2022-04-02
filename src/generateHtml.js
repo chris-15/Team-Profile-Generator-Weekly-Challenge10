@@ -1,3 +1,4 @@
+// declaring variables for file dependencies needed
 const managerCard = require("./managerCard");
 const engineerCard = require("./engineerCard");
 const internCard = require("./internCard");

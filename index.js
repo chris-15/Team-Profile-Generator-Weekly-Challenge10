@@ -7,6 +7,7 @@ const manager = require("./lib/Manager");
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
+const generateHtml = require("././src/generateHtml");
 
 // declare an empty array to hold employees when added through prompt
 const teamArray= []
@@ -195,17 +196,25 @@ const employeeQuestions = () => {
       } else {
           return teamArray;
       }
-
       
   });
 };
 
+// function to write HTML file to final output
+function writeToFile(fileName, data) {
+    fs.writeFileSync(fileName,data);
+    console.log("HTML team page created!")
+}
+
+
 // start the prompt for the team starting with the manager questions
 //then go to adding the employees
 //then console log the final resutls
+// andd adding results to generate the the html page
 managerQuestions()
     .then(employeeQuestions)
     .then(teamResults => {
         console.log(teamResults)
-        return teamArray;
+        const pageContent = generateHtml(teamResults);
+        writeToFile("./dist/teamProfile.html", pageContent)
     })

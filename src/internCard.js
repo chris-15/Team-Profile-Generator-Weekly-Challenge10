@@ -1,4 +1,4 @@
-
+// function to generate an intern card
 function internCard(employee) {
     return `
     <div class="mb-4">

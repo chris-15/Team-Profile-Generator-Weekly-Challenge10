@@ -1,4 +1,4 @@
-// function for engineer card
+// function to generate engineer card
 function engineerCard(employee) {
   return `
   <div class="mb-4">

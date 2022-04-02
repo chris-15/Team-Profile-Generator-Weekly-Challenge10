@@ -1,4 +1,4 @@
-// function for manager card
+// function to generate manager card
 function managerCard(employee) {
     return `
     <div class="mb-4">
