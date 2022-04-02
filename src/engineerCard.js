@@ -14,7 +14,7 @@ function engineerCard(employee) {
       <li class="list-group-item">
         Email: <a href="mailto:${employee.email}">${employee.email}</a>
       </li>
-      <li class="list-group-item">Github: ${employee.github}</li>       
+      <li class="list-group-item">Github: <a href="https://github.com/${employee.github}">${employee.github}</a></li>       
     </ul>
   </div>
 </div>
