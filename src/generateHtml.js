@@ -21,6 +21,7 @@ function generateHtml(data) {
         }
     }
 
+    // calls the body hmtl function and adds any cards created through the user prompt
     const html = body(cards);
 
     return html

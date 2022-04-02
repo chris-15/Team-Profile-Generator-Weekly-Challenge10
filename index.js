@@ -1,17 +1,14 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const employee = require("./lib/Employee");
-const engineer = require("./lib/Engineer");
-const intern = require("./lib/Intern");
-const manager = require("./lib/Manager");
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const generateHtml = require("././src/generateHtml");
 
-// declare an empty array to hold employees when added through prompt
+// declare an empty array to hold employees when added through prompts
 const teamArray= []
 
+// prompt questions for manager
 // manager’s name, employee ID, email address, and office number
 const managerQuestions = () => {
   return inquirer.prompt([
@@ -69,12 +66,14 @@ const managerQuestions = () => {
     },
   ])
   .then((managerData) => {
+      // deconsturcted managerData to use when calling 'new Manager'
      const {name, id, email, officeNumber} = managerData;
      const manager = new Manager(name, id, email, officeNumber)
       teamArray.push(manager)
   })
 };
 
+// prompt questions for the employees
 //engineer’s name, ID, email, and GitHub username
 // intern’s name, ID, email, and school
 const employeeQuestions = () => {
