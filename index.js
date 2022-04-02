@@ -106,7 +106,7 @@ const employeeQuestions = () => {
     },
     {
       type: "input",
-      name: "employeeID",
+      name: "id",
       message: "What is the employee's ID number? (Required)",
       validate: (employeeIdInput) => {
         if (employeeIdInput && !isNaN(employeeIdInput)) {
@@ -184,7 +184,7 @@ const employeeQuestions = () => {
           teamArray.push(engineer);
       }
       //if the role is intern then make new Intern class and push it to the team array
-      if(employeeData.employeeRole === "Intern") {
+      else if(employeeData.employeeRole === "Intern") {
           const{name, id, email, school} = employeeData;
           const intern = new Intern(name, id, email, school);
           teamArray.push(intern)
