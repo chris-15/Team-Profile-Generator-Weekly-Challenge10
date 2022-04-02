@@ -1,4 +1,4 @@
-# ReadMe Generator- Weekly Challenge 9
+# Team Profile Generator- Weekly Challenge 10
 
   ![badge](https://img.shields.io/badge/license-MIT%20License-blue)
 
