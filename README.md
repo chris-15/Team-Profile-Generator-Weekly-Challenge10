@@ -1,7 +1,7 @@
 # ReadMe Generator- Weekly Challenge 9
 
   ![badge](https://img.shields.io/badge/license-MIT%20License-blue)
-  
+
  ## Table of Contents 
   - [Description](#description)
   - [Installation](#installation)
@@ -47,7 +47,7 @@ A video of the application in use:
 Below is a screenshot of the example HTML file genereated in the demonstration video:
 <br>
 
-<img src= "./assets/images/sampleHTML.png" alt="challenge requirements" width="550" height= "300">
+<img src= "./assets/images/sampleHTML.png" alt="challenge requirements" width="600" height= "400">
 
 <br>
 
