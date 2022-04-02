@@ -202,7 +202,7 @@ const employeeQuestions = () => {
 // function to write HTML file to final output
 function writeToFile(fileName, data) {
     fs.writeFileSync(fileName,data);
-    console.log("HTML team page created!")
+    console.log("Team Profile HTML page created!")
 }
 
 
